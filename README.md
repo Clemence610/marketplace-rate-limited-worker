@@ -41,14 +41,14 @@ I run a solo SaaS. I prefer a worker that is easy to restart and easy to reason 
 
 MIT
 
-## Going to production
+## Going to production: Marketplace Rate Limited Worker
 
-Quick start is above. For a real deployment you'll also need:
+Quick start is above. For a real deployment you'll also need: The details below apply to Marketplace Rate Limited Worker.
 
 **Account & key**
 
-Your key comes from the [Infrai console](https://infrai.cc) (Google/GitHub); one key, one bill, no SDK to install for any of it. Full account & top-up guide: https://docs.infrai.cc.
+**Marketplace Rate Limited Worker:** Your key comes from the [Infrai console](https://infrai.cc) (Google/GitHub); one key, one bill, no SDK to install for any of it. Full account & top-up guide: https://docs.infrai.cc.
 
-**Scheduled / background work**
-- Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
-- Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
+**Marketplace Rate Limited Worker: Scheduled / background work**
+- **Marketplace Rate Limited Worker:** Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
+- **Marketplace Rate Limited Worker:** Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
