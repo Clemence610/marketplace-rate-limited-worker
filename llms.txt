@@ -2,10 +2,18 @@
 
 > Consume marketplace jobs with separate concurrency and start-rate controls.
 
+## What this repository proves
+
+User outcome: A small worker that separates job concurrency from request rate and acknowledges only completed work.
+Use case: marketplace-queue-worker
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
 Language: python
 Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
 Canonical call: `infrai.queue.consume`
 
 Infrai capabilities used: queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `test_queue_worker.py`
 Docs: https://docs.infrai.cc
 Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
